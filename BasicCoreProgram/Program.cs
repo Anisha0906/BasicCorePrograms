@@ -21,7 +21,7 @@ namespace BasicCoreProgram
             Console.WriteLine("6 For: Select Quotient and Remainder");
             Console.WriteLine("7 For: Select Swap the Numbers");
             Console.WriteLine("8:Select Even and Odd number");
-
+            Console.WriteLine("9 For: Select Alphabet Vowel");
             int selection = Convert.ToInt32(Console.ReadLine());
          
             switch (selection)
@@ -57,6 +57,10 @@ namespace BasicCoreProgram
                 case 8:
                     EvenOrOdd EvenOdd = new EvenOrOdd();
                     EvenOdd.CheckEvenOrdd();
+                    break;
+                case 9:
+                    VowelOrNot VowelNot = new VowelOrNot();
+                    VowelNot.CheckGivenVowel();
                     break;
                 default:
                     Console.WriteLine("Invalid Selection. Select inBetween 1 to 3");
