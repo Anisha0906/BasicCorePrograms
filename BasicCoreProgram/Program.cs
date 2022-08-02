@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Basic_Core_Program
+namespace BasicCoreProgram
 {
     class Program
     {
@@ -18,23 +18,25 @@ namespace Basic_Core_Program
             Console.WriteLine("3 For: Select Power of 2 Number");
 
             int selection = Convert.ToInt32(Console.ReadLine());
-            // user selection
+         
 
             switch (selection)
             {
                 case 1:
-                    //FLIP COIN
                     FlipCoinSimulation FlipCoin = new FlipCoinSimulation();
                     FlipCoin.CheckHeadTailPercentage();
                     break;
                 case 2:
-                    //CheckLeapYearOrNot
                     LeapYearOrNot LeapYearOrNot = new LeapYearOrNot();
                     LeapYearOrNot.LeapYear();
                     break;
                 case 3:
                     PowerOf2 CalPower = new PowerOf2();
                     CalPower.CalcuOfPower();
+                    break;
+                case 4:
+                    HarmonicNumber CalculateHarmonicNumber = new HarmonicNumber();
+                    CalculateHarmonicNumber.CalcHarmonicSeries();
                     break;
                 default:
                     Console.WriteLine("Invalid Selection. Select inBetween 1 to 3");

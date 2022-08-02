@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Basic_Core_Program
+namespace BasicCoreProgram
 {
     class FlipCoinSimulation
     {
