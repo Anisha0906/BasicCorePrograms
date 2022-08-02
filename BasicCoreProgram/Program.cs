@@ -19,6 +19,7 @@ namespace BasicCoreProgram
             Console.WriteLine("4 For: Select the Harmonic Number");
             Console.WriteLine("5 For: Select Factors of number");
             Console.WriteLine("6 For: Select Quotient and Remainder");
+            Console.WriteLine("7 For: Select Swap the Numbers");
 
             int selection = Convert.ToInt32(Console.ReadLine());
          
@@ -47,6 +48,10 @@ namespace BasicCoreProgram
                 case 6:
                     QusRemaindercs QuesRem = new QusRemaindercs();
                     QuesRem.QuotientRemainder();
+                    break;
+                case 7:
+                    Swap2Number SwapTwoNo = new Swap2Number();
+                    SwapTwoNo.SwapTwoNumber();
                     break;
                 default:
                     Console.WriteLine("Invalid Selection. Select inBetween 1 to 3");
