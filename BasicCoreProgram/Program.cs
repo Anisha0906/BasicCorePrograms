@@ -20,6 +20,7 @@ namespace BasicCoreProgram
             Console.WriteLine("5 For: Select Factors of number");
             Console.WriteLine("6 For: Select Quotient and Remainder");
             Console.WriteLine("7 For: Select Swap the Numbers");
+            Console.WriteLine("8:Select Even and Odd number");
 
             int selection = Convert.ToInt32(Console.ReadLine());
          
@@ -52,6 +53,10 @@ namespace BasicCoreProgram
                 case 7:
                     Swap2Number SwapTwoNo = new Swap2Number();
                     SwapTwoNo.SwapTwoNumber();
+                    break;
+                case 8:
+                    EvenOrOdd EvenOdd = new EvenOrOdd();
+                    EvenOdd.CheckEvenOrdd();
                     break;
                 default:
                     Console.WriteLine("Invalid Selection. Select inBetween 1 to 3");
