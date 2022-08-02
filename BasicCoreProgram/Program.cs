@@ -22,6 +22,7 @@ namespace BasicCoreProgram
             Console.WriteLine("7 For: Select Swap the Numbers");
             Console.WriteLine("8:Select Even and Odd number");
             Console.WriteLine("9 For: Select Alphabet Vowel");
+            Console.WriteLine("10 For: Select Greatest number among Three");
             int selection = Convert.ToInt32(Console.ReadLine());
          
             switch (selection)
@@ -61,6 +62,10 @@ namespace BasicCoreProgram
                 case 9:
                     VowelOrNot VowelNot = new VowelOrNot();
                     VowelNot.CheckGivenVowel();
+                    break;
+                case 10:
+                     CheckGreaterOrSmallest checkgreaterOrSmallest = new CheckGreaterOrSmallest();
+                    checkgreaterOrSmallest.GreaterOrSmaller();
                     break;
                 default:
                     Console.WriteLine("Invalid Selection. Select inBetween 1 to 3");
